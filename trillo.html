@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trillo: Your all in one booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <img src="img/trillo-logo.png" alt="Trillo logo" class="header-logo" />
+
+        <form action="" class="search">
+          <input
+            type="search"
+            class="search-input"
+            name="search"
+            id="search"
+            placeholder="Search hotels"
+          />
+          <button class="search-btn" for="search">
+            <svg class="search-icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav_icon-box">
+            <svg class="user-nav_icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav_notification">7</span>
+          </div>
+
+          <div class="user-nav_icon-box">
+            <svg class="user-nav_icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav_notification">7</span>
+          </div>
+
+          <div class="user-nav_user">
+            <img
+              src="img/user.jpg"
+              alt="User image"
+              class="user-nav_user-photo"
+            />
+            <span class="user-nav_user-name">Khuzaima</span>
+          </div>
+        </nav>
+      </header>
+      <main class="content">
+        <aside class="sidebar">
+          <ul class="sidebar-nav">
+            <li class="sidebar-nav_item">
+              <a href="#" class="sidebar-nav_link">
+                <svg class="sidebar-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+
+            <li class="sidebar-nav_item">
+              <a href="#" class="sidebar-nav_link">
+                <svg class="sidebar-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+
+            <li class="sidebar-nav_item">
+              <a href="#" class="sidebar-nav_link">
+                <svg class="sidebar-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+
+            <li class="sidebar-nav_item">
+              <a href="#" class="sidebar-nav_link">
+                <svg class="sidebar-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">&copy; 2017 by trillo. All rights reserved.</div>
+        </aside>
+
+        <section class="hotel-view">
+          <section class="gallery">
+            <figure class="gallery-item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Hotel image"
+                class="gallery-photo"
+              />
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Hotel image"
+                class="gallery-photo"
+              />
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Hotel image"
+                class="gallery-photo"
+              />
+            </figure>
+          </section>
+
+          <section class="overview">
+            <h2 class="overview-heading">Hotel las palmas</h2>
+            <div class="overview-stars">
+              <svg class="overview-stars_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview-stars_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview-stars_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview-stars_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview-stars_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="overview-location">
+              <svg class="overview-location_icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="overview-location_btn btn-inline">
+                Albufeira, Portugal
+              </button>
+            </div>
+
+            <div class="overview-rating">
+              <div class="overview-rating_average">8.6</div>
+              <div class="overview-rating_count">429 votes</div>
+            </div>
+          </section>
+
+          <section class="details">
+            <aside class="description">
+              <div class="special-text">
+                [ This project was done as part of completing a course 'Advanced
+                CSS and SASS: Flexbox, Grid, Animations and More!' taught by
+                Jonas Schmedtmann on UDEMY. ]
+              </div>
+              <p class="paragraph">
+                Located in Albufeira, this beachfront hotel is next to a golf
+                course and within 1 mi (2 km) of Maria Luisa Beach and Santa
+                Eulalia Beach. Albufeira Beach and Falesia Beach are also within
+                2 mi (3 km).
+              </p>
+              <p class="paragraph">
+                All 300 rooms have deep soaking tubs and offer free WiFi and
+                balconies or patios. For a bit of entertainment, LCD TVs come
+                with satellite channels, and guests will also find 24-hour room
+                service and hair dryers.
+              </p>
+
+              <ul class="list">
+                <li class="list-item">CLose to the beach.</li>
+
+                <li class="list-item">Free airport shuttle.</li>
+
+                <li class="list-item">Air condition and heating</li>
+
+                <li class="list-item">We speak all languages.</li>
+
+                <li class="list-item">Breakfast included.</li>
+
+                <li class="list-item">Free wifi in all rooms.</li>
+
+                <li class="list-item">Pets allowed.</li>
+
+                <li class="list-item">Perfect for Families.</li>
+              </ul>
+
+              <div class="recommend">
+                <p class="recommend-count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend-friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Recommend friends"
+                    class="recommend-friends_photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Recommend friends"
+                    class="recommend-friends_photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Recommend friends"
+                    class="recommend-friends_photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Recommend friends"
+                    class="recommend-friends_photo"
+                  />
+                </div>
+              </div>
+            </aside>
+
+            <aside class="reviews">
+              <figure class="user-review">
+                <blackqoute class="user-review_text">
+                  I had an wonderful experience in the hotel. The staff are nice
+                  and helpful. The room was comfy. however, the bathroom was too
+                  small and kind of smelly.
+                </blackqoute>
+
+                <figcaption class="user-review_user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User photo"
+                    class="user-review_photo"
+                  />
+                  <div class="user-review_box">
+                    <div class="user-review_name">Nick Smith</div>
+                    <div class="user-review_date">Feb 23, 2017</div>
+                  </div>
+                  <div class="user-review_rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="user-review">
+                <blackqoute class="user-review_text">
+                  Great hotel, wonderful location, beautiful scenes. Room had
+                  ocean view. The fornt desk was helpful, let us checkout later
+                  than scheduled. All in all a great experience.
+                </blackqoute>
+
+                <figcaption class="user-review_user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User photo"
+                    class="user-review_photo"
+                  />
+                  <div class="user-review_box">
+                    <div class="user-review_name">MARY THOMAS</div>
+                    <div class="user-review_date">June 22, 2018</div>
+                  </div>
+                  <div class="user-review_rating">6.5</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">
+                Show all
+                <span> → </span>
+              </button>
+            </aside>
+          </section>
+
+          <section class="cta">
+            <h2 class="cta-booking">
+              Good news! we have 4 rooms left for your selected dates.
+            </h2>
+            <button class="cta-btn">
+              <span class="cta-btn_visible">Book now</span>
+              <span class="cta-btn_invisible">Only 4 rooms left</span>
+            </button>
+          </section>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
+
+<script>
+  // postcss.config.js
+module.exports = {
+  plugins: [
+    require('autoprefixer')({
+      overrideBrowserslist: ['last 10 versions']
+    })
+  ]
+};
+</script>

@@ -1,0 +1,24 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "This is all in one booking page/Trillo page",
+  "main": "trillo.html",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css --watch ",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass sass/main.scss css/style.comp.css ",
+    "prefix:css": "postcss css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Khuzaima Asif",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.78.0"
+  }
+}

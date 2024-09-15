@@ -1,0 +1,78 @@
+// all element container
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  @include respond(laptop) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+// header
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// aside
+.content {
+  display: flex;
+
+  @include respond(tablet) {
+    flex-direction: column;
+  }
+}
+
+// side bar
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  color: #fff;
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// main content
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+}
+
+// details
+
+.details {
+  padding: 3rem;
+  font-size: 1.4rem;
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+
+  @include respond(tablet) {
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 3rem;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
