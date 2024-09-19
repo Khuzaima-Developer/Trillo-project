@@ -1,0 +1,132 @@
+// logo
+.header-logo {
+  height: 3.25rem;
+  margin-left: 3rem;
+}
+
+// search box
+
+.search {
+
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  &-input {
+
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 10rem;
+    width: 90%;
+    margin-right: -3.25rem;
+    outline: none;
+    transition: all 0.4s;
+    transform: translateY(0);
+
+    &:focus {
+      width: 100%;
+      background-color: var(--color-grey-light-2);
+    }
+
+    &:hover {
+      transform: translateY(-.15rem);
+      box-shadow: var(--shadow-light-input);
+    }
+
+    &::-webkit-input-placeholder {
+        font-weight: 100;
+        color: var(--color-grey-light-4)
+    }
+  }
+  &-input:focus + &-btn {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &-input:hover + &-btn {
+    transform: translateY(-.15rem);
+  }
+
+  &-btn {
+    border: none;
+    background-color: var(--color-grey-light-2);
+    z-index: 5;
+    transition: all .4s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &-icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+// user nav
+
+.user-nav {
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+        padding: 0 2rem ;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &:hover {
+            background-color: var(--color-grey-light-2);
+        }
+    }
+  &_icon-box {
+    position: relative;
+  }
+
+  &_icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  &_notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .85rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    background-color: var(--color-primary);
+  }
+
+  &_user {
+    &-photo {
+      height: 3.75rem;
+      border-radius: 50%;
+    }
+
+    &-name {
+        margin-left: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+  }
+}

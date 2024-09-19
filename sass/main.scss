@@ -1,0 +1,28 @@
+// abstracts
+
+@import "variables";
+@import "mixins";
+
+// animations
+
+@import "animation";
+
+
+// base
+
+@import "base";
+
+// components 
+
+@import "components";
+@import "components/sidebar";
+@import "components/gallery";
+@import "components/overview";
+@import "components/description";
+@import "components/reviews";
+@import "components/cta";
+
+// layouts
+
+@import "layout";
+
